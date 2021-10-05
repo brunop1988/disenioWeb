@@ -1,0 +1,18 @@
+.subTituloVentas {
+    transition: 1s;
+    animation-name: animacion6;
+    animation-duration: 0.05s;
+    animation-iteration-count: 20;
+}
+
+@keyframes animacion6 {
+    0% {
+        color: rgb(57, 57, 94);
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: rgb(57, 57, 94);
+    }
+}

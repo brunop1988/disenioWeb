@@ -1,0 +1,15 @@
+        //ADAPTACIÓN A PANTALLAS PEQUEÑAS
+        @media (min-width:600px) {
+            .nosotros {
+                padding: 200px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
+            #imagenNosotros {
+                height: 500px;
+            }
+            #fondoNosotros {
+                background-color: black;
+                padding: 250px;
+            }
+        }

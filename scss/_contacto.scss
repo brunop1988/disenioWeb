@@ -1,0 +1,33 @@
+#labelContacto {
+    background-color: white;
+    font-size: 20px;
+    margin-right: 120px;
+}
+
+#inputContacto {
+    width: 40% !important;
+    margin-left: 170px;
+}
+
+#inputMensaje {
+    width: 75% !important;
+    margin-left: 0;
+}
+
+#formContacto {
+    margin-left: 80px;
+}
+
+#submitContacto {
+    margin-right: 120px;
+}
+
+//ADAPTACIÓN DE LA PÁGINA DE CONTACTO A PANTALLAS PEQUEÑAS
+@media(max-width:600px) {
+    #foto2 {
+        margin: 20px;
+    }
+    #inputContacto {
+        margin-left: 20px;
+    }
+}

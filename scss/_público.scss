@@ -1,0 +1,258 @@
+/*********************************/
+
+
+/*HOJA DE ESTILOS VISUALES*/
+
+
+/*********************************/
+
+
+/*EVENTUALMENTE TUVE QUE DEJAR ESTAS TRES "SENTENCIAS" DE CSS AL PRINCIPIO, 
+DE OTRO MODO SE DEFORMA EL MENU DE NAVEGACION*/
+
+
+/*********************************/
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+ul ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 14px;
+    border-right: solid 2px black;
+    padding-left: 20px;
+    padding-right: 33px;
+    margin-left: 5px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    padding: 2px;
+}
+
+
+/*********************************/
+
+
+/*EFECTO TRANSITION PARA EL MENU DE LA PAGINA*/
+
+
+/*SE "PISAN" ESTILOS DE BOOTSTRAP*/
+
+
+/*********************************/
+
+a {
+    color: black;
+    transition: 1s;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: 'New Rocker', cursive;
+    color: red;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: black;
+    transition: 1s;
+}
+
+
+/*********************************/
+
+
+/*EN EL CASO DEL HOVER SE PIENSA EN EL !important COMO UTIL PARA LA PÁGINA EN CUESTIÓN*/
+
+
+/*********************************/
+
+.nav-link:hover {
+    font-family: 'New Rocker', cursive;
+    color: red !important;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    font-family: 'New Rocker', cursive;
+    color: red !important;
+    font-size: 18px;
+    background-color: transparent !important;
+}
+
+
+/*********************************/
+
+
+/*EFECTO TRANSFORM CON TRANSITION*/
+
+
+/*********************************/
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redesSociales p {
+    padding: 20px;
+}
+
+
+/*********************************/
+
+
+/*EFECTO TRANSICION PARA EL ACCESO A REDES SOCIALES*/
+
+
+/*********************************/
+
+a svg:hover {
+    transition: 0.5s all;
+    transform: rotateZ(30deg);
+}
+
+ul li:hover ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: none;
+    padding: 2px;
+}
+
+
+/*********************************/
+
+
+/*FORMATO PARA EL MENU DEL HEADER*/
+
+
+/*********************************/
+
+header {
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+
+/*********************************/
+
+
+/*TITULOS CON DISTINTOS FORMATOS*/
+
+
+/*********************************/
+
+h1 {
+    font-family: 'New Rocker', cursive;
+    font-weight: 500;
+    color: black;
+    font-size: 34px;
+}
+
+h2 {
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    color: rgb(57, 57, 94);
+    font-size: 25 px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(57, 57, 94);
+    font-size: 20px;
+}
+
+h5 {
+    color: red;
+    font-family: 'New Rocker', cursive;
+    text-align: center;
+    font-size: 20px !important;
+}
+
+.imagenDePortada {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+/*********************************/
+
+
+/*SE APLICA A DETERMINADO PÁRRAFO*/
+
+
+/*********************************/
+
+.parrafo1 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px!important;
+}
+
+p {
+    color: brown;
+    font-family: 'Roboto Condensed', sans-s;
+    text-align: center;
+    font-size: 20px!important;
+}
+
+
+/*********************************/
+
+
+/*GRADIENTES HEADER Y FOOTER*/
+
+
+/*********************************/
+
+#gradiente1 {
+    background: linear-gradient(to bottom left, #8FE05A, rgb(116, 52, 52));
+}
+
+#gradiente2 {
+    background: linear-gradient(to bottom left, #92ad76, #16C1D9);
+}
