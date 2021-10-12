@@ -1,15 +1,42 @@
-        //ADAPTACIÓN A PANTALLAS PEQUEÑAS
-        @media (min-width:600px) {
-            .nosotros {
-                padding: 200px;
-                padding-top: 5px;
-                padding-bottom: 10px;
-            }
-            #imagenNosotros {
-                height: 500px;
-            }
-            #fondoNosotros {
-                background-color: black;
-                padding: 250px;
-            }
-        }
+//ADAPTACIÓN A PANTALLAS PEQUEÑAS
+@media (max-width:2048px) and (min-width:1024px) {
+    .nosotros {
+        padding: 200px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    #imagenNosotros {
+        height: 30%;
+    }
+    #manoNosotros {
+        height: 200px;
+    }
+}
+
+@media (max-width:1023px) and (min-width:800px) {
+    .nosotros {
+        padding: 100px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    #imagenNosotros {
+        height: 50%;
+    }
+    #manoNosotros {
+        height: 200px;
+    }
+}
+
+@media (max-width:799px) and (min-width:600px) {
+    .nosotros {
+        padding: 100px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    #imagenNosotros {
+        height: 40%;
+    }
+    #manoNosotros {
+        height: 100px;
+    }
+}

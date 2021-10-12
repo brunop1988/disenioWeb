@@ -25,9 +25,18 @@
 //ADAPTACIÓN DE LA PÁGINA DE CONTACTO A PANTALLAS PEQUEÑAS
 @media(max-width:600px) {
     #foto2 {
-        margin: 20px;
+        margin: 0;
     }
     #inputContacto {
-        margin-left: 20px;
+        margin-left: 5px;
+    }
+    @media (max-width: 450px) {
+        #foto2 {
+            grid-area: foto2;
+            background-image: none;
+        }
+        #mensaje2 {
+            margin: 0px;
+        }
     }
 }
