@@ -25,6 +25,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/ico" href="../img/solluna.ico">
+
+
+
     <title>Contacto</title>
 </head>
 
@@ -32,16 +37,13 @@
 
     <header id="gradiente2">
         <div>
-            <div id="elementoHome">
-                <a style="text-align: center" href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-            </div>
             <h1>CanjeMusic</h1>
 
 
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,9 +76,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/historialDeUsuario.html">Historial</a>
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="#redesVerde">Redes Sociales</a>
@@ -92,36 +92,89 @@
 
     </header>
     <main>
-        <!--GRID APLICADO A UNA SECCION -->
-        <section class="contacto">
-            <h2 id="mensaje">Para contactarnos, llene el siguiente formulario </h2>
+        <div id="elementoHome">
+            <a style="text-align: center" href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-            <div class="container">
-                <div class="row">
-                    <div id="foto2">
-                        <form id="formContacto" class="row g-3 needs-validation " novalidate>
+        </div>
 
-                            <div id="mensaje2">
+        >
+        <section id="sectionContacto">
 
-                                <div class="mb-3">
-                                    <label id="labelContacto" for="exampleFormControlInput1 " class="form-label">Su email</label>
-                                    <input id="inputContacto" type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+
+
+            <!--GRID APLICADO A UNA SECCION -->
+            <article class="contacto">
+                <h2 id="mensaje">Para contactarnos, llene el siguiente formulario </h2>
+
+                <div class="container">
+                    <div class="row">
+                        <div id="foto2">
+                            <form id="formContacto" class="row g-3 needs-validation " novalidate>
+
+                                <div id="mensaje2">
+
+                                    <div class="mb-3">
+                                        <label id="labelContacto" for="exampleFormControlInput1 " class="form-label">Su email</label>
+                                        <input id="inputContacto" type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label id="labelContacto" for="exampleFormControlTextarea1 " class="form-label ">Mensaje</label>
+                                        <textarea id="inputMensaje" class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button id="submitContacto" type="submit " class="btn btn-primary ">Submit</button>
+                                    </div>
+
                                 </div>
-                                <div class="mb-3">
-                                    <label id="labelContacto" for="exampleFormControlTextarea1 " class="form-label ">Mensaje</label>
-                                    <textarea id="inputMensaje" class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <button id="submitContacto" type="submit " class="btn btn-primary ">Submit</button>
-                                </div>
+                            </form>
 
-                            </div>
-                        </form>
+                        </div>
+                    </div>
+            </article>
+            <!--LOGO DE LA PAGINA QUE DERIVA AL INICIO-->
+
+            <article id="noticiasContacto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="badge rounded-pill bg-dark text-white">Lo mas leído</span>
+
+                        </div>
+
+                        <div id="noti1" class="col-md-12">
+                            <img src="../img/snoop.jpg" alt="snoopD">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti1" class="col-md-10">
+                            <a href="">Snoop Dogg lanza su nuevo sencillo "Big Subwoofer"</a>
+                        </div>
+
+
+
+                        <div id="noti2" class="col-md-12">
+                            <img src="../img/lapollaEvaristo.webp" alt="evaristo">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti2" class="col-md-10">
+                            <a href=" ">
+                LA POLLA RECORDS estrenará "No Somos Nada"...</a>
+                        </div>
+
+
+                        <div id="noti3" class="col-md-12">
+                            <img src="../img/coldplay.jpg" alt="coldplay">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti3" class="col-md-10">
+                            <a href=" ">Coldplay usará baterías recicladas en su próxima gira</a>
+                        </div>
 
                     </div>
                 </div>
-        </section>
 
+            </article>
+
+        </section>
     </main>
 
     <footer>
@@ -155,7 +208,7 @@
             </div>
 
             <div style="text-align: center; ">
-                <a href="#top ">Volver Arriba</a>
+                <a id="volverArriba" href="#top ">Volver Arriba</a>
             </div>
         </div>
     </footer>

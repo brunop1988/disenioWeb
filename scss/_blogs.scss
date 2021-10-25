@@ -1,4 +1,242 @@
-//APLICADO A UNA PALABRA EN PARTICULAR
-.blogSolo {
-    font-family: 'Vast Shadow', cursive;
-}
+    //APLICADO A UNA PALABRA EN PARTICULAR
+    @media(min-width:650px) {
+        .blogSolo {
+            font-family: 'Vast Shadow', cursive;
+        }
+        .tituloTabla {
+            margin-left: 40px;
+            font-size: px;
+        }
+        .subTituloBlog {
+            color: rgb(199, 188, 188)!important;
+        }
+        #nombreTema {
+            background-color: black;
+            text-align: left;
+            color: white;
+        }
+        #datosTema {
+            text-align: right;
+            font-size: 14px!important;
+        }
+        #datosUsuario {
+            #imgUsuario {
+                height: 250px;
+                width: 230px;
+            }
+            #nombreUsuario {
+                font-size: 12px;
+                color: black;
+                text-align: left;
+            }
+        }
+        #imagenTema {
+            height: 500px;
+            width: 700px;
+        }
+        #contenidoPortadaTema {
+            margin-left: 200px;
+            width: 60%;
+            text-align: center;
+            background-color: rgb(237, 237, 245);
+            border: groove 2px rgba(0, 0, 0, 0.363);
+        }
+        #columnaTemas {
+            padding: 20px;
+            img {
+                margin-left: 5px;
+                height: 80px;
+                width: 100px;
+            }
+            p {
+                width: 30%;
+                font-size: 15px!important;
+                ;
+            }
+            div {
+                border-bottom: solid 0.5px black;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+        #foroDiscusion {
+            padding-left: 50px;
+        }
+        #paginasBlog {
+            margin-top: 50px;
+            margin-left: 400px;
+        }
+        #notisBlog {
+            position: sticky !important;
+            left: 30px;
+            top: 60px;
+            height: 20px;
+            width: 250px;
+            #noti1 {
+                a {
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+            #noti2 {
+                a {
+                    padding-top: 0!important;
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+            #noti3 {
+                a {
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 70px;
+                }
+            }
+        }
+        #publiBlog {
+            position: sticky !important;
+            left: 30px;
+            top: 100px;
+            margin-top: 1000px;
+            img {
+                height: 170px;
+                width: 200px;
+            }
+        }
+    }
+    
+    @media(max-width:650px) {
+        .subTituloBlog {
+            color: rgb(199, 188, 188);
+        }
+        #columnaTemas {
+            border: groove 2px rgb(72, 73, 141);
+            width: min-content;
+            height: min-content;
+            div {
+                border-bottom: solid 0.5px black;
+                margin: auto;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            img {
+                margin-left: 5px;
+                height: 65px;
+                width: 65px;
+            }
+            p {
+                width: 30%;
+                font-size: 15px!important;
+                ;
+            }
+        }
+        #foroDiscusion {
+            width: min-content;
+            margin-top: 30px;
+            article {
+                border-top: solid 1px black;
+                #imagenTema {
+                    height: 310px;
+                    width: 350px;
+                }
+            }
+        }
+        #nombreTema {
+            color: white;
+            background-color: black;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            .fuentePublicidad {
+                text-align: start;
+            }
+        }
+        #temaDos {
+            margin-top: 100px;
+        }
+        #temaTres {
+            margin-top: 100px;
+        }
+        #datosUsuario {
+            #imgUsuario {
+                height: 150px;
+                width: 130px;
+            }
+            p {
+                width: 30%;
+                font-size: 16px!important;
+            }
+        }
+        #contenidoPortadaTema {
+            background-color: rgb(237, 237, 245);
+            border: groove 2px rgba(0, 0, 0, 0.363);
+        }
+        #notisBlog {
+            height: 200px;
+            width: 200px;
+            border-bottom: none;
+            #noti1 {
+                a {
+                    font-size: 20px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 150px;
+                    width: 190px;
+                }
+            }
+            #noti2 {
+                a {
+                    padding-top: 0!important;
+                    font-size: 20px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 150px;
+                    width: 190px;
+                }
+            }
+            #noti3 {
+                a {
+                    font-size: 20px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 150px;
+                    width: 190px;
+                }
+            }
+        }
+        #publiBlog {
+            border: solid 1px black;
+            margin-top: 800px;
+            margin-right: 20px;
+            img {
+                margin-left: 20px;
+                height: 130px;
+                width: 160px;
+            }
+            p {
+                margin-left: 10px;
+            }
+        }
+        #footerBlog {
+            margin-top: 600px;
+        }
+        #spanPublicidad {
+            margin-left: 60px;
+        }
+    }

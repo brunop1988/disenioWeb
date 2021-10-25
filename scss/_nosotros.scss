@@ -1,42 +1,138 @@
-//ADAPTACIÓN A PANTALLAS PEQUEÑAS
 @media (max-width:2048px) and (min-width:1024px) {
     .nosotros {
         padding: 200px;
         padding-top: 5px;
-        padding-bottom: 10px;
     }
-    #imagenNosotros {
-        height: 30%;
+    #tituloNosotros {
+        font-size: 45px!important;
     }
-    #manoNosotros {
-        height: 200px;
+    #subtituloNosotros {
+        font-size: 35px!important;
+    }
+    .mision {
+        width: 800px;
+        margin-left: 60px;
+    }
+    #caruselIndicador {
+        margin-bottom: 40px;
+    }
+    #noticiasNosotros {
+        position: fixed !important;
+        left: 30px;
+        top: 70px;
+        height: 20px;
+        width: 250px;
+        margin-top: 70px;
+        margin-left: 1080px;
+        #noti1 {
+            a {
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+        }
+        #noti2 {
+            a {
+                padding-top: 0!important;
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+        }
+        #noti3 {
+            a {
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+        }
     }
 }
 
-@media (max-width:1023px) and (min-width:800px) {
-    .nosotros {
-        padding: 100px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-    #imagenNosotros {
-        height: 50%;
-    }
-    #manoNosotros {
-        height: 200px;
-    }
-}
-
-@media (max-width:799px) and (min-width:600px) {
-    .nosotros {
-        padding: 100px;
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-    #imagenNosotros {
-        height: 40%;
-    }
-    #manoNosotros {
-        height: 100px;
+@media (max-width:1023px) and (min-width:650px) {
+    #noticiasNosotros {
+        position: fixed !important;
+        left: 30px;
+        top: 60px;
+        height: 20px;
+        width: 250px;
+        margin-top: 70px;
+        margin-left: 1080px;
+        #noti1 {
+            a {
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+        }
+        #noti2 {
+            a {
+                padding-top: 0!important;
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+        }
+        #noti3 {
+            a {
+                font-size: 15px!important;
+            }
+            img {
+                margin-top: 20px;
+                height: 70px;
+                width: 90px;
+            }
+            .nosotros {
+                padding: 100px;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
+            #tituloNosotros {
+                font-size: 45px!important;
+            }
+            #subtituloNosotros {
+                font-size: 35px!important;
+            }
+        }
+        @media(max-width:649px) and (min-width:300px) {
+            #noticiasNosotros {
+                padding-top: 20px;
+                a {
+                    font-size: 25px;
+                    font-family: $fuenteTextos;
+                }
+                img {
+                    border: solid 2px black;
+                    height: $fotosNoticiasAdaptadas;
+                }
+            }
+            #tituloNosotros {
+                font-size: 45px!important;
+            }
+            #subtituloNosotros {
+                font-size: 35px!important;
+            }
+            #caruselIndicador {
+                margin-bottom: 200px;
+            }
+            #caruselFlechas {
+                margin-top: 160px;
+            }
+        }
     }
 }

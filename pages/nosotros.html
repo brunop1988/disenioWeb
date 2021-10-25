@@ -26,19 +26,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/ico" href="../img/solluna.ico">
+
+
 </head>
 
 <body>
     <header id="gradiente2">
 
-        <div id="elementoHome">
-            <a style="text-align: center" href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-        </div>
         <div>
             <h1 style="text-align: center;">SOMOS UNA PLATAFORMA PARA COMPRA-VENTA-CANJE DE INSTRUMENTOS MUSICALES</h1>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,9 +73,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/historialDeUsuario.html">Historial</a>
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="#redesVerde">Redes Sociales</a>
@@ -88,67 +88,108 @@
         </nav>
     </header>
     <main>
-        <section class="nosotros">
-            <div class="mision">
+        <!--ICONO DE LA PAGINA QUE NOS DERIVA AL INICIO-->
+        <div style="margin-right: 15px;" id="elementoHome">
+            <a href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-                <h2>Nuestra Misión </h2>
+        </div>
+        <section class="nosotros">
+            <article class="mision">
+
+                <h2 id="tituloNosotros">Nuestra Misión </h2>
                 <p class="parrafo1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae omnis quibusdam aperiam. Iusto blanditiis quos, modi facilis veniam velit magni sunt earum cupiditate inventore natus ducimus, reprehenderit eveniet obcaecati rerum possimus explicabo
                     vel mollitia, non quis porro harum deserunt.
                 </p>
 
 
-            </div>
 
+                <article style="padding-top:100px" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <h3 id="subtituloNosotros">Estuvimos en</h3>
+                    <div id="caruselIndicador" class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 
-            <div style="padding-top:100px" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <h2>Estuvimos en</h2>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-                </div>
-                <div class="carousel-inner">
-
-
-                    <div class="carousel-item active">
-                        <h3>Metallica-Argenina</h5>
-
-                            <img id="imagenNosotros" src="../img/metallicaArgentina.jpg" class="d-block w-100" alt="metallicaArgentina">
-                    </div>
-                    <div class="carousel-item">
-                        <h3>limpbizkit-Chile</h5>
-                            <img id="imagenNosotros" src="../img/limpChile.jpg" class="d-block w-100" alt="limpChile">
-                    </div>
-                    <div class="carousel-item">
-                        <h3>Black Label Society-Uruguay</h5>
-                            <img id="imagenNosotros" src="../img/bls.jpg" class="d-block w-100" alt="blsUruguay">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
                     </div>
-                    <div class="carousel-item">
-                        <div style="background-color: black;">
-                            <h3>...y muchos mas</h3>
+                    <div class="carousel-inner">
+
+
+                        <div class="carousel-item active">
+                            <h3>Metallica-Argenina</h5>
+
+                                <img id="imagenNosotros" src="../img/metallicaArgentina.jpg" class="d-block w-100" alt="metallicaArgentina">
                         </div>
+                        <div class="carousel-item">
+                            <h3>limpbizkit-Chile</h5>
+                                <img id="imagenNosotros" src="../img/limpChile.jpg" class="d-block w-100" alt="limpChile">
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Black Label Society-Uruguay</h5>
+                                <img id="imagenNosotros" src="../img/bls.jpg" class="d-block w-100" alt="blsUruguay">
+
+                        </div>
+
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <div id="caruselFlechas">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
-            </div>
 
+                        <h4>...y muchos mas</h4>
+                </article>
+                <article>
+                    <article id="noticiasContacto">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="badge rounded-pill bg-dark text-white">Lo mas leído</span>
+
+                                </div>
+
+                                <div id="noti1" class="col-md-10">
+                                    <img src="../img/snoop.jpg" alt="snoopD">
+
+                                </div>
+                                <div style="border-bottom: solid 1px black;" id="noti1" class="col-md-10">
+                                    <a href="">Snoop Dogg lanza su nuevo sencillo "Big Subwoofer"</a>
+                                </div>
+
+
+
+                                <div id="noti2" class="col-md-12">
+                                    <img src="../img/lapollaEvaristo.webp" alt="evaristo">
+
+                                </div>
+                                <div style="border-bottom: solid 1px black;" id="noti2" class="col-md-10">
+                                    <a href=" ">
+                LA POLLA RECORDS estrenará "No Somos Nada"...</a>
+                                </div>
+
+
+                                <div id="noti3" class="col-md-10">
+                                    <img src="../img/coldplay.jpg" alt="coldplay">
+
+                                </div>
+                                <div style="border-bottom: solid 1px black;" id="noti3" class="col-md-10">
+                                    <a href=" ">Coldplay usará baterías recicladas en su próxima gira</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </article>
 
         </section>
     </main>
 
-    <footer class=>
+    <footer class="footerNosotros">
 
         <div>
             <img class="imagenDePortada " src="../img/images-removebg-preview.png " alt="instrumentos ">
@@ -170,7 +211,7 @@
             </div>
 
             <div style="text-align: center;">
-                <a href="#top">Volver Arriba</a>
+                <a id="volverArriba" href="#top">Volver Arriba</a>
             </div>
         </div>
     </footer>

@@ -25,7 +25,8 @@
     <link rel="preconnect " href="https://fonts.googleapis.com ">
     <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap " rel="stylesheet ">
-
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/ico" href="../img/solluna.ico">
 
     <title>Perfil</title>
 </head>
@@ -33,17 +34,14 @@
 <body>
     <header id="gradiente2">
         <div>
-            <div id="elementoHome">
-                <a style="text-align: center" href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-            </div>
             <div>
                 <h1>CanjeMusic</h1>
             </div>
 
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,9 +74,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/historialDeUsuario.html">Historial</a>
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="#redesVerde">Redes Sociales</a>
@@ -93,13 +89,18 @@
         </nav>
 
     </header>
-    <main>
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-8 col-xs-8 mx-auto ">
-                    <h2>Perfil del usuario</h2>
+    <main id="perfil">
+        <!--ICONO DE LA PAGINA QUE NOS DERIVA AL INICIO-->
+        <div style="margin-right: 15px;" id="elementoHome">
+            <a href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-                    <section class="grid-container ">
+        </div>
+        <div class="container ">
+            <section class="row ">
+                <article class="col-md-8 col-xs-8 mx-auto ">
+                    <h3>Perfil del usuario</h3>
+
+                    <div class="grid-container">
                         <!--CABECERA DE TABLA DE DATOS DE USUARIO-->
                         <div id="cabeceraUsuario ">Nombre</div>
                         <div id="cabeceraUsuario ">Apellido</div>
@@ -111,12 +112,59 @@
                         <div>Puchetta</div>
                         <div>43589726</div>
                         <div>25/03/1988</div>
+                    </div>
+
+                    <div id="historialUsuario" class="col-md-12 mx-auto">
 
 
+                        <!--INFORMACIÓN ACERCA DE LAS OPERACIONES REALIZADAS POR UN USUARIO-->
+                        <div class="accordion" id="accordionPerfil">
+                            <div style="width: fit-content;" class="accordion-item">
+                                <h4 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Historial de operaciones 
+                                  </button>
+                                </h4>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
 
-                </div>
 
-                <div class="col-md-4 col-xs-4 mx-auto ">
+                                        <table border align="center">
+                                            <thead class="theadHistorial">
+                                                <th>Código</th>
+                                                <th>Nombre</th>
+                                                <th>Modelo</th>
+                                                <th>Tipo de Operación</th>
+                                                <th>Precio</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="trHistorial">
+                                                    <td>1</td>
+                                                    <td>Ibanez</td>
+                                                    <td>mtm1</td>
+                                                    <td>Venta</td>
+                                                    <td>15000</td>
+                                                </tr>
+                                                <tr class="trHistorial">
+                                                    <td>2</td>
+                                                    <td>Fender</td>
+                                                    <td>Stratocaster</td>
+                                                    <td>Compra</td>
+                                                    <td>18000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+
+                <article id="formPerfil" class="col-md-4 col-xs-4 mx-auto ">
                     <h5>Editar mi perfil</h5>
                     <form class="row g-3 needs-validation " novalidate>
                         <div class="col-md-4 ">
@@ -146,8 +194,10 @@
                             </div>
                     </form>
                     </div>
-                </div>
-            </div>
+        </div>
+        </article>
+
+
     </main>
 
 
@@ -172,7 +222,7 @@
             </div>
 
             <div style="text-align: center; ">
-                <a href="#top ">Volver Arriba</a>
+                <a id="volverArriba" href="#top ">Volver Arriba</a>
             </div>
         </div>
     </footer>

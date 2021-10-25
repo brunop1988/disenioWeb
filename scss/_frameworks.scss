@@ -1,195 +1,225 @@
-        .nosotros {
-            display: flex;
-            flex-direction: column;
+//GRILLA PARA SECCION CONTACTO
+@media(min-width:650px) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 'mensaje mensaje' 'mensaje2 foto2';
+        font-family: 'Rock Salt', cursive;
+        font-size: 15px;
+        text-align: center;
+        color: darkred;
+    }
+    #mensaje {
+        grid-area: mensaje;
+    }
+    #mensaje2 {
+        grid-area: mensaje2;
+        font-size: 30px;
+        padding: 50px !important;
+    }
+    #foto2 {
+        grid-area: foto2;
+        margin-left: 250px;
+        margin-right: 250px;
+        background-image: url(../img/imagen2.jpg);
+        background-repeat: no-repeat;
+    }
+    //GRID PARA SECCION BLOGS
+    .blog {
+        display: grid;
+        grid-template-columns: 100px 0.9fr 140px;
+        grid-template-rows: 300px 100px 100px 100px 50px;
+        grid-template-areas: 'columnaTemas foroDiscusion aside''columnaTemas foroDiscusion aside''columnaTemas foroDiscusion aside''footerBlog footerBlog footerBlog';
+        height: 80vh;
+        margin: 0;
+        grid-column-gap: 20px;
+    }
+    #columnaTemas {
+        grid-area: columnaTemas;
+        border: groove 5px rgb(72, 73, 141);
+        height: min-content;
+        width: min-content;
+        div {
+            padding-top: 6px;
         }
-        
-        .ventas {
-            display: flex;
-            padding-left: 100px;
-            .formVentas {
-                padding-left: 100px;
-            }
+    }
+    #foroDiscusion {
+        grid-area: foroDiscusion;
+        padding-left: 2rem;
+    }
+    aside {
+        grid-area: aside;
+        .fuentePublicidad {
+            font-size: 15px !important;
+            text-align: left;
         }
-        
-        @media (max-width: 600px) {
-            .ventas {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                .formVentas {
-                    padding: 0;
-                    padding-top: 20px;
-                }
-            }
+    }
+    #footerBlog {
+        grid-area: footerBlog;
+        margin-top: 3000px;
+    }
+    //GRID PARA INDEX
+    #seccionPrincipal {
+        display: grid;
+        grid-template-columns: 0.4fr 900px;
+        grid-template-rows: 500px 30px 30px 650px 300px;
+        grid-template-areas: 'historia carouselIndex' 'entrevistas noticia1''noticia2 noticia2' 'noticia3 noticia3' 'publicidadRevista publicidadRevista';
+        padding: 30px;
+        font-family: $fuenteTextos;
+    }
+    #historia {
+        grid-area: historia;
+    }
+    #entrevistas {
+        grid-area: entrevistas;
+    }
+    #carouselIndex {
+        grid-area: carouselIndex;
+    }
+    #noticias {
+        grid-area: noticias;
+    }
+    #noticia1 {
+        grid-area: noticia1;
+    }
+    #noticia2 {
+        grid-area: noticia2;
+    }
+    #noticia3 {
+        grid-area: noticia3;
+    }
+    #publicidadRevista {
+        padding-left: 250px;
+        grid-area: publicidadRevista;
+    }
+}
+
+//ADAPTACIÓN DE SECCIÓN "BLOGS" CON GRID
+@media (max-width: 650px) {
+    .blog {
+        display: grid;
+        grid-template-columns: 100px 250px;
+        grid-template-rows: 1fr 170px 500px;
+        grid-template-areas: 'columnaTemas  foroDiscusion' 'aside aside';
+    }
+    #columnaTemas {
+        grid-area: columnaTemas;
+    }
+    #foroDiscusion {
+        grid-area: foroDiscusion;
+    }
+    aside {
+        margin-top: 150px;
+        grid-area: aside;
+    }
+    #footerBlog {
+        padding-top: 400px!important;
+    }
+}
+
+//ADAPTACIÓN DEL INDEX CON FLEX
+@media (max-width:650px) {
+    #seccionPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.ventas {
+    display: flex;
+    padding-left: 100px;
+    .formVentas {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .ventas {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .formVentas {
+            padding: 0;
+            padding-top: 20px;
         }
-        
-        .canjes {
-            display: flex;
-            padding-left: 100px;
-            .formCanjes {
-                padding-left: 100px;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .canjes {
-                display: flex;
-                flex-direction: column;
-                padding: 0;
-                .formCanjes {
-                    padding: 0;
-                    padding-top: 20px;
-                }
-            }
-        }
-        
-        .historial {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .contacto {
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: 1fr 3fr;
-            grid-template-areas: 'mensaje mensaje' 'mensaje2 foto2';
-            font-family: 'Rock Salt', cursive;
-            font-size: 15px;
-            text-align: center;
-            color: darkred;
-        }
-        
-        #mensaje {
-            grid-area: mensaje;
-        }
-        
-        #mensaje2 {
-            grid-area: mensaje2;
-            font-size: 30px;
-            padding: 50px !important;
-        }
-        
-        #foto2 {
-            grid-area: foto2;
-            margin-left: 250px;
-            margin-right: 250px;
-            background-image: url(../img/imagen2.jpg);
-            background-repeat: no-repeat;
-        }
-        
+    }
+}
+
+.canjes {
+    display: flex;
+    padding-left: 100px;
+    .formCanjes {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .canjes {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         .formCanjes {
-            padding: 50px;
+            padding: 0;
+            padding-top: 20px;
         }
-        
-        .blog {
-            display: grid;
-            grid-template-columns: 100px 0.9fr 140px;
-            grid-template-rows: 100px 100px;
-            grid-template-areas: "columnaTemas foroDiscusion aside" "columnaTemas foroDiscusion aside";
-            height: 80vh;
-            margin: 0;
-            grid-column-gap: 20px;
-        }
-        
-        #columnaTemas {
-            grid-area: columnaTemas;
-            border: groove 5px rgb(72, 73, 141);
-            height: max-content;
-            width: max-content;
-            div {
-                padding-top: 6px;
-            }
-        }
-        
-        #foroDiscusion {
-            grid-area: foroDiscusion;
-            padding-left: 2rem;
-        }
-        
-        aside {
-            grid-area: aside;
-            .fuentePublicidad {
-                font-size: 15px !important;
-                text-align: left;
-            }
-        }
-        
-        #seccionPrincipal {
-            display: grid;
-            grid-template-columns: 0.4fr 900px;
-            grid-template-rows: 500px 30px 30px 650px 1fr;
-            grid-template-areas: 'historia carouselIndex' 'entrevistas noticia1''noticia2 noticia2' 'noticia3 noticia3' 'publicidadRevista publicidadRevista';
-            padding: 30px;
-            font-family: $fuenteTextos;
-        }
-        
-        #historia {
-            grid-area: historia;
-        }
-        
-        #entrevistas {
-            padding-top: 430px;
-            grid-area: entrevistas;
-        }
-        
-        #carouselIndex {
-            grid-area: carouselIndex;
-        }
-        
-        #noticias {
-            grid-area: noticias;
-        }
-        
-        #noticia1 {
-            grid-area: noticia1;
-        }
-        
-        #noticia2 {
-            grid-area: noticia2;
-        }
-        
-        #noticia3 {
-            grid-area: noticia3;
-        }
-        
-        #publicidadRevista {
-            padding-left: 250px;
-            grid-area: publicidadRevista;
-        }
-        
-        @media (max-width:600px) {
-            #seccionPrincipal {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 200px 200px 300px 300px 300px;
-                grid-template-areas: 'historia' 'carouselIndex' 'entrevistas' 'noticia1''noticia2' 'noticia3' 'publicidadRevista';
-                padding: 30px;
-                font-family: $fuenteTextos;
-            }
-            #historia {
-                grid-area: historia;
-            }
-            #entrevistas {
-                padding-top: 430px;
-                grid-area: entrevistas;
-            }
-            #carouselIndex {
-                grid-area: carouselIndex;
-            }
-            #noticias {
-                grid-area: noticias;
-            }
-            #noticia1 {
-                grid-area: noticia1;
-            }
-            #noticia2 {
-                grid-area: noticia2;
-            }
-            #noticia3 {
-                grid-area: noticia3;
-            }
-            #publicidadRevista {
-                padding-left: 250px;
-                grid-area: publicidadRevista;
-            }
-        }
+    }
+}
+
+.formCanjes {
+    padding: 50px;
+}
+
+.formVentas {
+    padding: 50px;
+}
+
+.historial {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:650px) {
+    .grid-container {
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: 100px 100px 140px 200px;
+        grid-template-rows: 1fr 1fr;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    .grid-container div {
+        border: solid 3px black;
+    }
+    #cabeceraUsuario {
+        text-transform: uppercase;
+        text-shadow: currentColor;
+    }
+    #accordionPerfil {
+        padding-left: 98px !important;
+    }
+}
+
+@media (max-width:650px) {
+    .grid-container {
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: 70px 70px 90px 100px;
+        grid-template-rows: 1fr 1fr;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    .grid-container div {
+        border: solid 3px black;
+    }
+    #formPerfil {
+        margin-top: 20px;
+    }
+}

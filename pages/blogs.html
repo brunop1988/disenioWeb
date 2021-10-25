@@ -8,6 +8,7 @@
     <meta name="description" content="Sección con foros de discusión acerca de temas libres. No es un lugar para transacciones">
     <meta name="keywords" content="blog, foro, discusion, tema libre, publicidad, sociedad, política, chat, usuarios, deportes, creencias, mitos, leyendas, historias, naturaleza, cine">
     <title>Foro de interés general</title>
+
     <!--BOOTSTRAP-->
     <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
 
@@ -27,22 +28,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
 
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="image/ico" href="../img/solluna.ico">
+
 </head>
 
 <body>
     <header id="gradiente1">
-        <div id="elementoHome">
-            <a style="text-align: center" href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
-        </div>
         <div>
             <h1 style="margin:auto;padding-bottom: 20px;" id="tituloBlog">Bienvenido a <strong class="blogSolo">blOGs</strong> </h1>
         </div>
         <div>
-            <h2>En esta sección podrás hablar de temas de tu interés y crear entradas sobre los mismos</h2>
+            <h2 class="subTituloBlog">En esta sección podrás hablar de temas de tu interés y crear entradas sobre los mismos</h2>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,12 +76,10 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/historialDeUsuario.html">Historial</a>
-                        </li>
+
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#redesVerde">Redes Sociales</a>
+                            <a class="nav-link" href="#redesRojo">Redes Sociales</a>
                         </li>
 
                         <li class="nav-item">
@@ -91,75 +90,195 @@
             </div>
         </nav>
 
+        <!--ICONO DE LA PAGINA QUE NOS DERIVA AL INICIO-->
+
     </header>
 
+    <div style="margin-right: 15px;" id="elementoHome">
+        <a href="../index.html"><img style="height:50px;width:50px;" src="../img/solluna.png" alt="toHome"></a>
 
+    </div>
     <main class="blog">
+
+
         <section id="columnaTemas">
 
-            <h3>Entradas</h3>
+            <h3 class="tituloEntradas">Otros temas tratados</h3>
 
-            <div><a href="">Tema1</a></div>
-            <div><a href="">Tema2</a></div>
-            <div><a href="">Tema3</a></div>
-            <div><a href="">Tema4</a></div>
-            <div><a href="">Tema5</a></div>
-            <div><a href="">Tema6</a></div>
-            <div><a href="">Tema7</a></div>
-            <div><a href="">Tema8</a></div>
-            <div><a href="">Tema9</a></div>
+            <div><img src="../img/imagen3.jpg" alt=""><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ab!</a></div>
+            <div><img src="../img/imagen2.jpg" alt="guitarristaPsyc"><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi similique doloribus repudiandae quisquam. Ex, eaque!</a></div>
+            <div><img src="../img/dontPanic.jpg" alt="hojaWeed"><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore itaque ullam quae deserunt quidem harum.</a></div>
+            <div><img src="../img/beatles.jpg" alt="beatle"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio.</a></div>
+            <div><img src="../img/coreyT.jpg" alt="corey"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, expedita.</a></div>
+
+
 
 
         </section>
         <section id="foroDiscusion">
 
-            <table id="tablaBlog" align="left" border>
-                <thead>
-                    <th>Imágen</th>
-                    <th>Nombre</th>
-                    <th>Descripción</th>
-                    <th>Usuario creador</th>
-                    <th>Fecha creación</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img height="45px" width="45px" src="../img/stupidFace.jpg" alt="cara loca"></td>
-                        <td>La vida de la langosta</td>
-                        <td>Hablamos sobre lo que nos viene a la mente</td>
-                        <td>ZapaJhon</td>
-                        <td>14/5/21</td>
-                    </tr>
-                    <tr>
-                        <td><img height="45px" width="45px" src="../img/dontPanic.jpg" alt="hemp"></td>
-                        <td>Cultivo al aire libre o indoor</td>
-                        <td>Comparamos pros y contras de ambas prácticas</td>
-                        <td>Ramita</td>
-                        <td>20/4/20</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <h4 class="tituloTabla">Últmos topics editados</h4>
+
+            <!--SE MUESTRA LA VISTA PREVIA DE CADA TEMA-->
+
+            <article id="temaUno">
+                <p id="nombreTema">
+                    Nombre del tema
+
+                </p>
+                <p id="datosTema">
+                    <span>fecha creacion:.......</spsan><span>Hora:........</span>
+                </p>
+                <span>Usuario creador:</span>
+
+                <div id="datosUsuario">
+                    <img id="imgUsuario" src="../img/skulls.jpg" alt="">
+                </div>
+                <span>nombre ejemplo</span>
+
+                <a href="">
+                    <p>
+                        <img id="imagenTema" src="../img/piltrafa.jpeg" alt="pilttrafa">
+                    </p>
+                </a>
+                <a href="">
+                    <p id="contenidoPortadaTema">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illo consequatur atque magnam beatae corrupti ea ex nobis iusto impedit, itaque alias qui tempora. Temporibus dolorem facere recusandae odio perferendis quidem voluptates quis quia voluptatem
+                        odit dolores tempora blanditiis ex, mollitia officia commodi porro. Nam, est?</p>
+                    </p>
+                </a>
+            </article>
+            <article id="temaDos">
+                <p id="nombreTema">
+                    Nombre del tema
+                </p>
+                <p id="datosTema">
+                    <span>fecha creacion:.......</spsan><span>Hora:........</span>
+                </p>
+                <span>Usuario creador:</span>
+
+                <div id="datosUsuario">
+                    <img id="imgUsuario" src="../img/stupidFace.jpg" alt="">
+                </div>
+                <span>nombre ejemplo</span>
+                <a href="">
+                    <p>
+                        <img id="imagenTema" src="../img/series2021.jpg" alt="seriesCover">
+                    </p>
+                </a>
+                <a href="">
+                    <p id="contenidoPortadaTema">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non eaque porro officia obcaecati, debitis voluptatibus corrupti nostrum nemo deleniti, laboriosam sunt culpa quasi labore vero reiciendis quod nulla ipsum! Fugit...
+                    </p>
+                </a>
+            </article>
+            <article id="temaTres">
+                <p id="nombreTema">
+                    Nombre del tema
+                </p>
+                <p id="datosTema">
+                    <span>fecha creacion:.......</spsan><span>Hora:........</span>
+                </p>
+                <span>Usuario creador:</span>
+
+                <div id="datosUsuario">
+                    <img id="imgUsuario" src="../img/skulls.jpg" alt="">
+                </div>
+                <span>nombre ejemplo</span>
+                <a href="">
+                    <p>
+                        <img id="imagenTema" src="../img/auto rapido.jpg" alt="pilttrafa">
+                    </p>
+                </a>
+                <a href="">
+                    <p id="contenidoPortadaTema">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus facilis quos deleniti quaerat dolores, quibusdam sint consectetur totam suscipit quidem est obcaecati culpa aliquam quasi hic! Eos natus harum ipsum fuga voluptatibus unde eligendi,
+                        eum aliquam. Ab alias, iste fuga quos mollitia dolore itaque cum laboriosam delectus repellat? Accusantium voluptatem hic ut possimus deleniti, voluptas quod, quidem saepe neque harum tempora sint!</p>
+                </a>
+            </article>
+
+
+            <!--EJEMPLO SI HUBIESE VARIAS HOJAS DE ESTA SECCION-->
+            <div id="paginasBlog">
+
+                <a class="btn btn-primary" href="#" role="button">2</a>
+                <a class="btn btn-primary" href="#" role="button">3</a>
+                <a class="btn btn-primary" href="#" role="button">4</a>
+                <a class="btn btn-primary" href="#" role="button">Siguiente</a>
+
+            </div>
+
+
+
         </section>
 
-
         <aside>
-            <h4>Publicidad</h4>
-            <div>
-                <img style="height: 200px; width: 200px;" src="../img/caballos.jpg" alt="caballos Publicidad">
-                <p class="fuentePublicidad">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+            <div id="notisBlog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="badge rounded-pill bg-dark text-white">Últimas noticias</span>
+
+                        </div>
+
+                        <div id="noti1" class="col-md-12">
+                            <img src="../img/newsted.jpg" alt="newsted">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti1" class="col-md-12">
+                            <a href="">Jason Newsted explica que su comentario...</a>
+                        </div>
+
+
+
+                        <div id="noti2" class="col-md-10">
+                            <img src="../img/lapollaEvaristo.webp" alt="evaristo">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti2" class="col-md-12">
+                            <a href=" ">
+                LA POLLA RECORDS estrenará "No Somos Nada"...</a>
+                        </div>
+
+
+                        <div id="noti3" class="col-md-12">
+                            <img src="../img/judasPriest.webp" alt="Judas Priest">
+
+                        </div>
+                        <div style="border-bottom: solid 1px black;" id="noti3" class="col-md-10">
+                            <a href=" ">En una reciente entrevista para The Morning Call, el bajista de JUDAS PRIEST...</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+            <div id="publiBlog">
+                <span id="spanPublicidad">Publicidad</span>
+                <div>
+                    <img src="../img/caballos.jpg" alt="caballos Publicidad">
+                    <p class="fuentePublicidad">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
 
-            <div>
-                <img style="height: 200px; width: 200px;" src="../img/cursoPersTrain.jpg" alt="entrenadora Publicidad">
-                <p class="fuentePublicidad">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div>
+                    <img src="../img/cursoPersTrain.jpg" alt="entrenadora Publicidad">
+                    <p class="fuentePublicidad">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img src="../img/publiLentes.jpg" alt="entrenadora Publicidad">
+                    <p class="fuentePublicidad">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+
+
             </div>
-
-
-
         </aside>
     </main>
 
 
-    <footer>
+    <footer id="footerBlog">
+
         <div style="padding-top: 100px;">
             <img class="imagenDePortada" src="../img/images-removebg-preview.png " alt="instrumentos">
         </div>
@@ -180,7 +299,7 @@
             </div>
 
             <div style="text-align: center;">
-                <a href="#top">Volver Arriba</a>
+                <a id="volverArriba" href="#top">Volver Arriba</a>
             </div>
         </div>
     </footer>

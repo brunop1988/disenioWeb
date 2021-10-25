@@ -17,8 +17,12 @@ table {
     }
     td {
         border-right: $bordeDerecho;
+        width: fit-content;
     }
     tr {
         border-bottom: $bordeInferior;
+    }
+    li {
+        border-bottom: solid 1px black;
     }
 }

@@ -37,6 +37,11 @@ nav ul li {
     margin-left: 5px;
 }
 
+nav {
+    padding: 2px !important;
+    padding-top: 0;
+}
+
 
 /*********************************/
 
@@ -58,7 +63,6 @@ a {
 a:hover {
     font-family: 'New Rocker', cursive;
     color: red;
-    font-size: 18px;
 }
 
 .nav-link {
@@ -86,6 +90,18 @@ a:hover {
     color: red !important;
     font-size: 14px;
     background-color: transparent !important;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+svg {
+    fill: white;
 }
 
 
@@ -138,7 +154,8 @@ ul ul li {
 
 .dropdown-menu {
     border: solid 1px black;
-    background-color: white;
+    background-color: rgb(33, 37, 41);
+    ;
 }
 
 
@@ -167,29 +184,30 @@ header {
 h1 {
     font-family: 'New Rocker', cursive;
     font-weight: 500;
-    color: black;
+    color: white;
     font-size: 34px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'New Rocker', cursive;
     text-align: center;
-    color: rgb(57, 57, 94);
-    font-size: 25 px;
+    color: rgb(20, 20, 82);
+    font-size: 25px;
 }
 
 h3 {
     font-family: 'New Rocker', cursive;
-    font-size: 20px;
-    color: red;
+    font-size: 25px;
+    color: rgb(138, 19, 19);
     text-align: center;
 }
 
 h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'New Rocker', cursive;
     text-align: center;
     color: rgb(57, 57, 94);
-    font-size: 17px;
+    font-size: 25px;
 }
 
 h5 {
@@ -219,14 +237,39 @@ h5 {
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    font-size: 18px!important;
+    font-size: 20px!important;
 }
 
 p {
-    color: brown;
+    color: #413c3c;
     font-family: 'Roboto Condensed', sans-s;
     text-align: center;
     font-size: 20px!important;
+}
+
+#volverArriba {
+    color: white;
+}
+
+#volverArriba:hover {
+    color: red;
+}
+
+
+/*********************************/
+
+
+/*ICONO DE LA PAGINA QUE LLEVA AL INICIO*/
+
+
+/*********************************/
+
+#elementoHome {
+    position: fixed !important;
+    left: 30px;
+    top: 60px;
+    height: 50px;
+    width: 50px;
 }
 
 
@@ -239,11 +282,12 @@ p {
 /*********************************/
 
 #gradiente1 {
-    background: linear-gradient(to bottom left, #8FE05A, rgb(116, 52, 52));
+    background-color: rgb(33, 37, 41);
 }
 
 #gradiente2 {
-    background: linear-gradient(to bottom left, #92ad76, #16C1D9);
+    background-color: rgb(33, 37, 41);
+    ;
 }
 
 .vina-camera-slider .camera_wrap .camera_pag .camera_pag_ul li {
