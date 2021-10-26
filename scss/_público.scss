@@ -65,11 +65,6 @@ a:hover {
     color: red;
 }
 
-.nav-link {
-    color: black;
-    transition: 1s;
-}
-
 
 /*********************************/
 
@@ -154,7 +149,7 @@ ul ul li {
 
 .dropdown-menu {
     border: solid 1px black;
-    background-color: rgb(33, 37, 41);
+    background-color: rgb(8, 8, 8);
     ;
 }
 
@@ -255,6 +250,15 @@ p {
     color: red;
 }
 
+//FONDO PARA PANTALLAS GRANDES
+@media(min-width:650px) {
+    #background {
+        background-image: url(../img/tribalmnusica.png);
+        background-repeat: repeat-y;
+        background-size: 200px;
+    }
+}
+
 
 /*********************************/
 
@@ -267,7 +271,7 @@ p {
 #elementoHome {
     position: fixed !important;
     left: 30px;
-    top: 60px;
+    top: 90px;
     height: 50px;
     width: 50px;
 }
@@ -276,7 +280,7 @@ p {
 /*********************************/
 
 
-/*GRADIENTES HEADER Y FOOTER*/
+/*FONDO DE HEADER Y FOOTER*/
 
 
 /*********************************/

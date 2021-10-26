@@ -1,138 +1,147 @@
-@media (max-width:2048px) and (min-width:1024px) {
-    .nosotros {
-        padding: 200px;
-        padding-top: 5px;
-    }
-    #tituloNosotros {
-        font-size: 45px!important;
-    }
-    #subtituloNosotros {
-        font-size: 35px!important;
-    }
-    .mision {
-        width: 800px;
-        margin-left: 60px;
-    }
-    #caruselIndicador {
-        margin-bottom: 40px;
-    }
-    #noticiasNosotros {
-        position: fixed !important;
-        left: 30px;
-        top: 70px;
-        height: 20px;
-        width: 250px;
-        margin-top: 70px;
-        margin-left: 1080px;
-        #noti1 {
-            a {
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
+    @media (max-width:2048px) and (min-width:1024px) {
+        .nosotros {
+            padding: 200px;
+            padding-top: 5px;
         }
-        #noti2 {
-            a {
-                padding-top: 0!important;
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
+        #tituloNosotros {
+            font-size: 45px!important;
         }
-        #noti3 {
-            a {
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
+        #subtituloNosotros {
+            font-size: 35px!important;
         }
-    }
-}
-
-@media (max-width:1023px) and (min-width:650px) {
-    #noticiasNosotros {
-        position: fixed !important;
-        left: 30px;
-        top: 60px;
-        height: 20px;
-        width: 250px;
-        margin-top: 70px;
-        margin-left: 1080px;
-        #noti1 {
-            a {
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
+        .mision {
+            width: 800px;
+            margin-left: 60px;
         }
-        #noti2 {
-            a {
-                padding-top: 0!important;
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
+        #caruselIndicador {
+            margin-bottom: 40px;
         }
-        #noti3 {
-            a {
-                font-size: 15px!important;
-            }
-            img {
-                margin-top: 20px;
-                height: 70px;
-                width: 90px;
-            }
-            .nosotros {
-                padding: 100px;
-                padding-top: 5px;
-                padding-bottom: 10px;
-            }
-            #tituloNosotros {
-                font-size: 45px!important;
-            }
-            #subtituloNosotros {
-                font-size: 35px!important;
-            }
-        }
-        @media(max-width:649px) and (min-width:300px) {
-            #noticiasNosotros {
-                padding-top: 20px;
+        #noticiasNosotros {
+            position: fixed !important;
+            left: 30px;
+            top: 70px;
+            height: 20px;
+            width: 250px;
+            margin-top: 70px;
+            margin-left: 1080px;
+            #noti1 {
                 a {
-                    font-size: 25px;
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+            }
+            #noti2 {
+                a {
+                    padding-top: 0!important;
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+            }
+            #noti3 {
+                a {
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:1023px) and (min-width:651px) {
+        #noticiasNosotros {
+            position: fixed !important;
+            left: 30px;
+            top: 60px;
+            height: 20px;
+            width: 250px;
+            margin-top: 70px;
+            margin-left: 1080px;
+            #noti1 {
+                a {
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+            }
+            #noti2 {
+                a {
+                    padding-top: 0!important;
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+            }
+            #noti3 {
+                a {
+                    font-size: 15px!important;
+                }
+                img {
+                    margin-top: 20px;
+                    height: 70px;
+                    width: 90px;
+                }
+                .nosotros {
+                    padding: 100px;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                }
+                #tituloNosotros {
+                    font-size: 45px!important;
+                }
+                #subtituloNosotros {
+                    font-size: 35px!important;
+                }
+            }
+        }
+    }
+    
+    @media(max-width:650px) {
+        #noticiasNosotros {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            #noti1,
+            #noti2,
+            #noti3 {
+                a {
+                    font-size: 20px;
                     font-family: $fuenteTextos;
                 }
                 img {
                     border: solid 2px black;
                     height: $fotosNoticiasAdaptadas;
                 }
-            }
-            #tituloNosotros {
-                font-size: 45px!important;
-            }
-            #subtituloNosotros {
-                font-size: 35px!important;
-            }
-            #caruselIndicador {
-                margin-bottom: 200px;
-            }
-            #caruselFlechas {
-                margin-top: 160px;
+                #snoop {
+                    width: 340px;
+                }
             }
         }
+        #tituloNosotros {
+            font-size: 45px!important;
+        }
+        #subtituloNosotros {
+            font-size: 35px!important;
+        }
+        #caruselIndicador {
+            margin-bottom: 200px;
+        }
+        #caruselFlechas {
+            margin-top: 160px;
+        }
     }
-}

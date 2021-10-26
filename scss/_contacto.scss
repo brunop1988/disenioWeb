@@ -72,12 +72,16 @@
                                 #noti2,
                                 #noti3 {
                                     a {
-                                        font-size: 25px;
+                                        font-size: 20px;
                                         font-family: $fuenteTextos;
                                     }
                                     img {
-                                        border: solid 2px black;
+                                        padding-top: 20px;
                                         height: $fotosNoticiasAdaptadas;
+                                    }
+                                    #snoop {
+                                        height: 240px;
+                                        width: 320px;
                                     }
                                 }
                             }

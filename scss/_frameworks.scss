@@ -219,6 +219,10 @@
     .grid-container div {
         border: solid 3px black;
     }
+    #cabeceraUsuario {
+        text-transform: uppercase;
+        text-shadow: currentColor;
+    }
     #formPerfil {
         margin-top: 20px;
     }

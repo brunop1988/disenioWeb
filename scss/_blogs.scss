@@ -38,8 +38,8 @@
             margin-left: 200px;
             width: 60%;
             text-align: center;
-            background-color: rgb(237, 237, 245);
-            border: groove 2px rgba(0, 0, 0, 0.363);
+            background-color: transparentize($color: #5d915f, $amount: 0.8);
+            border: groove 1px rgba(0, 0, 0, 0.363);
         }
         #columnaTemas {
             padding: 20px;
@@ -181,13 +181,14 @@
             }
         }
         #contenidoPortadaTema {
-            background-color: rgb(237, 237, 245);
+            background-color: transparentize($color: #5d915f, $amount: 0.8);
             border: groove 2px rgba(0, 0, 0, 0.363);
         }
         #notisBlog {
             height: 200px;
             width: 200px;
             border-bottom: none;
+            border-top: solid 1px black;
             #noti1 {
                 a {
                     font-size: 20px!important;

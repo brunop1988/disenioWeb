@@ -93,6 +93,7 @@
                     background-color: black;
                     margin-left: 10px;
                     img {
+                        margin-left: 20px;
                         height: $fotosEntrevistas;
                         width: $fotosEntrevistas;
                     }
@@ -206,11 +207,8 @@
                 font-size: 20px;
                 width: 230px;
             }
-            #historia {
-                border-right: none;
-                width: auto;
-            }
             .contenedor {
+                margin-left: 20px;
                 position: relative;
                 display: inline-block;
                 text-align: center;
@@ -280,8 +278,10 @@
                 padding-top: 80px;
                 .tituloEntrevistas {
                     font-size: 40px!important;
-                    padding-left: 0px;
                     color: black;
+                }
+                span {
+                    margin-left: 0px!important;
                 }
                 div {
                     background-color: white;

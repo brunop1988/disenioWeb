@@ -87,6 +87,7 @@
       background-color: black;
       margin-left: 10px; }
       #entrevistas div img {
+        margin-left: 20px;
         height: 160px;
         width: 160px; }
       #entrevistas div a {
@@ -169,10 +170,8 @@
     color: white;
     font-size: 20px;
     width: 230px; }
-  #historia {
-    border-right: none;
-    width: auto; }
   .contenedor {
+    margin-left: 20px;
     position: relative;
     display: inline-block;
     text-align: center; }
@@ -224,8 +223,9 @@
     padding-top: 80px; }
     #entrevistas .tituloEntrevistas {
       font-size: 40px !important;
-      padding-left: 0px;
       color: black; }
+    #entrevistas span {
+      margin-left: 0px !important; }
     #entrevistas div {
       background-color: white; }
       #entrevistas div img {
@@ -495,6 +495,9 @@ table {
     text-align: center; }
   .grid-container div {
     border: solid 3px black; }
+  #cabeceraUsuario {
+    text-transform: uppercase;
+    text-shadow: currentColor; }
   #formPerfil {
     margin-top: 20px; } }
 
@@ -541,10 +544,6 @@ a {
 a:hover {
   font-family: 'New Rocker', cursive;
   color: red; }
-
-.nav-link {
-  color: black;
-  transition: 1s; }
 
 /*********************************/
 /*EN EL CASO DEL HOVER SE PIENSA EN EL !important COMO UTIL PARA LA PÁGINA EN CUESTIÓN*/
@@ -602,7 +601,7 @@ ul ul li {
 
 .dropdown-menu {
   border: solid 1px black;
-  background-color: #212529; }
+  background-color: #080808; }
 
 /*********************************/
 /*FORMATO PARA EL MENU DEL HEADER*/
@@ -672,18 +671,24 @@ p {
 #volverArriba:hover {
   color: red; }
 
+@media (min-width: 650px) {
+  #background {
+    background-image: url(../img/tribalmnusica.png);
+    background-repeat: repeat-y;
+    background-size: 200px; } }
+
 /*********************************/
 /*ICONO DE LA PAGINA QUE LLEVA AL INICIO*/
 /*********************************/
 #elementoHome {
   position: fixed !important;
   left: 30px;
-  top: 60px;
+  top: 90px;
   height: 50px;
   width: 50px; }
 
 /*********************************/
-/*GRADIENTES HEADER Y FOOTER*/
+/*FONDO DE HEADER Y FOOTER*/
 /*********************************/
 #gradiente1 {
   background-color: #212529; }
@@ -723,8 +728,8 @@ p {
     margin-left: 200px;
     width: 60%;
     text-align: center;
-    background-color: #ededf5;
-    border: groove 2px rgba(0, 0, 0, 0.363); }
+    background-color: rgba(93, 145, 95, 0.2);
+    border: groove 1px rgba(0, 0, 0, 0.363); }
   #columnaTemas {
     padding: 20px; }
     #columnaTemas img {
@@ -824,12 +829,13 @@ p {
     width: 30%;
     font-size: 16px !important; }
   #contenidoPortadaTema {
-    background-color: #ededf5;
+    background-color: rgba(93, 145, 95, 0.2);
     border: groove 2px rgba(0, 0, 0, 0.363); }
   #notisBlog {
     height: 200px;
     width: 200px;
-    border-bottom: none; }
+    border-bottom: none;
+    border-top: solid 1px black; }
     #notisBlog #noti1 a {
       font-size: 20px !important; }
     #notisBlog #noti1 img {
@@ -905,7 +911,7 @@ p {
       height: 70px;
       width: 90px; } }
 
-@media (max-width: 1023px) and (min-width: 650px) {
+@media (max-width: 1023px) and (min-width: 651px) {
   #noticiasNosotros {
     position: fixed !important;
     left: 30px;
@@ -941,41 +947,33 @@ p {
       font-size: 45px !important; }
     #noticiasNosotros #noti3 #subtituloNosotros {
       font-size: 35px !important; } }
-  @media (max-width: 1023px) and (min-width: 650px) and (max-width: 649px) and (min-width: 300px) {
-    #noticiasNosotros #noticiasNosotros {
-      padding-top: 20px; }
-      #noticiasNosotros #noticiasNosotros a {
-        font-size: 25px;
-        font-family: Georgia, "Times New Roman", Times, serif; }
-      #noticiasNosotros #noticiasNosotros img {
-        border: solid 2px black;
-        height: 250px; }
-    #noticiasNosotros #tituloNosotros {
-      font-size: 45px !important; }
-    #noticiasNosotros #subtituloNosotros {
-      font-size: 35px !important; }
-    #noticiasNosotros #caruselIndicador {
-      margin-bottom: 200px; }
-    #noticiasNosotros #caruselFlechas {
-      margin-top: 160px; } }
 
-/*GRID PARA LA TABLA DE DATOS DEL USUARIO*/
-.grid-container {
-  background-color: skyblue;
-  display: grid;
-  grid-template-columns: 5fr 5fr 5fr 7fr;
-  grid-template-rows: 1fr 1fr;
-  width: fit-content;
-  align-items: center;
-  margin: auto;
-  text-align: center; }
-
-.grid-container div {
-  border: solid 3px black; }
-
-#cabeceraUsuario {
-  text-transform: uppercase;
-  text-shadow: currentColor; }
+@media (max-width: 650px) {
+  #noticiasNosotros {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #noticiasNosotros #noti1 a,
+    #noticiasNosotros #noti2 a,
+    #noticiasNosotros #noti3 a {
+      font-size: 20px;
+      font-family: Georgia, "Times New Roman", Times, serif; }
+    #noticiasNosotros #noti1 img,
+    #noticiasNosotros #noti2 img,
+    #noticiasNosotros #noti3 img {
+      border: solid 2px black;
+      height: 250px; }
+    #noticiasNosotros #noti1 #snoop,
+    #noticiasNosotros #noti2 #snoop,
+    #noticiasNosotros #noti3 #snoop {
+      width: 340px; }
+  #tituloNosotros {
+    font-size: 45px !important; }
+  #subtituloNosotros {
+    font-size: 35px !important; }
+  #caruselIndicador {
+    margin-bottom: 200px; }
+  #caruselFlechas {
+    margin-top: 160px; } }
 
 @media (min-width: 650px) {
   #labelContacto {
@@ -1029,13 +1027,18 @@ p {
     #noticiasContacto #noti1 a,
     #noticiasContacto #noti2 a,
     #noticiasContacto #noti3 a {
-      font-size: 25px;
+      font-size: 20px;
       font-family: Georgia, "Times New Roman", Times, serif; }
     #noticiasContacto #noti1 img,
     #noticiasContacto #noti2 img,
     #noticiasContacto #noti3 img {
-      border: solid 2px black;
+      padding-top: 20px;
       height: 250px; }
+    #noticiasContacto #noti1 #snoop,
+    #noticiasContacto #noti2 #snoop,
+    #noticiasContacto #noti3 #snoop {
+      height: 240px;
+      width: 320px; }
   #foto2 {
     margin: 0; }
   #inputContacto {
